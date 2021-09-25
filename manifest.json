@@ -1,0 +1,14 @@
+{
+  "name": "Explore tab sucks",
+  "description": "I was frustrated by accidentally clicked 'explore' so here is my extension.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "author": "Ugly Donkey",
+  "permissions": ["*://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["make-my-yt-better-place.js"]
+    }
+  ]
+}
